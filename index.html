@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body {
+      background-color: #ffe6eb;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      color: #ff3366;
+      font-size: 40px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .yes {
+      background-color: #ff3366;
+      color: white;
+    }
+    .no {
+      background-color: #999;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Will you be my Valentine? 💖</h1>
+
+  <button class="yes" onclick="alert('YAY!! 💕 I knew it!')">
+    Yes ❤️
+  </button>
+
+  <button class="no" onmouseover="moveButton(this)">
+    No 💔
+  </button>
+
+  <script>
+    function moveButton(btn) {
+      btn.style.left = Math.random() * 80 + "vw";
+      btn.style.top = Math.random() * 80 + "vh";
+    }
+  </script>
+
+</body>
+</html>
